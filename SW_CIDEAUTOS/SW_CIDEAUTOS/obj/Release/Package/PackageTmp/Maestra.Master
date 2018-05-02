@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Maestra.master.cs" Inherits="SW_CIDEAUTOS.Maestra" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'/>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            <div class="navegabilidad">
+				<!-- Logo de CIDEAUTOS -->
+				<div class="img-logo">
+                    <a href="index.aspx">
+                    <img src="imagenes/empresa/logo_ci.png"/></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="activo"><a href="index.aspx">Inicio</a></li>
+                        <li><a href="vehiculos.html">Vehiculos</a></li>
+                        <li><a href="financiamiento.html">Financiamiento</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="informacion.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
