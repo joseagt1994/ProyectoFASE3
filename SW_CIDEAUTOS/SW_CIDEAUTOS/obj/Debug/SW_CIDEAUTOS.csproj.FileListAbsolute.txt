@@ -18,3 +18,25 @@ c:\users\jose antonio\documents\visual studio 2015\Projects\SW_CIDEAUTOS\SW_CIDE
 c:\users\jose antonio\documents\visual studio 2015\Projects\SW_CIDEAUTOS\SW_CIDEAUTOS\obj\Debug\SW_CIDEAUTOS.csprojResolveAssemblyReference.cache
 c:\users\jose antonio\documents\visual studio 2015\Projects\SW_CIDEAUTOS\SW_CIDEAUTOS\obj\Debug\SW_CIDEAUTOS.dll
 c:\users\jose antonio\documents\visual studio 2015\Projects\SW_CIDEAUTOS\SW_CIDEAUTOS\obj\Debug\SW_CIDEAUTOS.pdb
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\csc.exe
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\vbc.exe
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\SW_CIDEAUTOS.dll.config
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\SW_CIDEAUTOS.dll
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\SW_CIDEAUTOS.pdb
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\obj\Debug\SW_CIDEAUTOS.csprojResolveAssemblyReference.cache
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\obj\Debug\SW_CIDEAUTOS.csproj.CoreCompileInputs.cache
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\obj\Debug\SW_CIDEAUTOS.csproj.CopyComplete
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\obj\Debug\SW_CIDEAUTOS.dll
+C:\Users\JOSEGT\Documents\GitHub\ProyectoFASE3\SW_CIDEAUTOS\SW_CIDEAUTOS\obj\Debug\SW_CIDEAUTOS.pdb

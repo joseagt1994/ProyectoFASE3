@@ -15,6 +15,8 @@
 </head>
 <body>
     
+    <form id="form1" runat="server">
+    
     <div class="wrap-content">
         <!-- Encabezado de la pagina web -->
         <header>
@@ -45,7 +47,7 @@
             </div>
         </header>
 
-        <%--<%= codigoHTML %>--%>
+        <%= codigoHTML %>
         <div class="titulo">
             <h1 class="color1"><%= actual.getMarca()+" "+actual.getLinea()+" "+actual.getAnio() %></h1>
         </div>
@@ -65,7 +67,7 @@
                 </div>
             </div>
             <!-- Informacion del vehiculo -->
-            <div class="columna">
+            <!--<div class="columna">
                 <div class="lista-items">
                     <ul style="padding: 0;">
                         <li>One</li>
@@ -76,7 +78,10 @@
                 <div class="lista-items">
 
                 </div>
-            </div>
+            </div>-->
+            
+            <asp:Button ID="btn_comprar" runat="server" Text="Comprar" OnClick="btn_comprar_Click" />
+            
         </div>
 
         <script src="js/jquery-1.11.2.min.js"></script>
@@ -112,5 +117,6 @@
             });
         </script>
     </div>
+    </form>
 </body>
 </html>

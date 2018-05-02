@@ -89,9 +89,9 @@ namespace SW_CIDEAUTOS
                                         "</td>" +
                                         "<td>";
 
-            double cuotas = Double.Parse(actual.getCuotas());
+            //double cuotas = Double.Parse(actual.getCuotas());
             galeriaImagenes += "<h3> Q." + String.Format(CultureInfo.InvariantCulture,
-                                 "{0:0,0.00}", cuotas) + "</h3>";
+                                 "{0:0,0.00}", actual.getCuotas()) + "</h3>";
                 
             galeriaImagenes += "</td>"+
                                         "</tr>"+
@@ -280,6 +280,11 @@ namespace SW_CIDEAUTOS
 		"</div>";
 
             codigoHTML = "\n" + galeriaImagenes + "\n" + informacion;
+        }
+
+        protected void btn_comprar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Pago.aspx?codigo="+actual.getCodigo());
         }
     }
 }
