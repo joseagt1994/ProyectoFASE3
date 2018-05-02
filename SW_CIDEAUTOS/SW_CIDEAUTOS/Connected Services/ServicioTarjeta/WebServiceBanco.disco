@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://bancoweb.azurewebsites.net/WebServiceBanco.asmx?wsdl" docRef="http://bancoweb.azurewebsites.net/WebServiceBanco.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://bancoweb.azurewebsites.net/WebServiceBanco.asmx" xmlns:q1="https://bancoweb.azurewebsites.net" binding="q1:WebServiceBancoSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://bancoweb.azurewebsites.net/WebServiceBanco.asmx" xmlns:q2="https://bancoweb.azurewebsites.net" binding="q2:WebServiceBancoSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

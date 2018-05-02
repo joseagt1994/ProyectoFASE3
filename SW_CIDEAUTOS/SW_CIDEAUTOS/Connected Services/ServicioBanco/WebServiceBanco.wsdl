@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://bancoweb.azurewebsites.net" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="https://bancoweb.azurewebsites.net" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://bancoweb.azurewebsites.net">
+      <s:element name="ConsultarTarjeta">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConsultarTarjetaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConsultarTarjetaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultarTarjetaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarTarjeta" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarTarjetaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarTarjetaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceBancoSoap">
+    <wsdl:operation name="ConsultarTarjeta">
+      <wsdl:input message="tns:ConsultarTarjetaSoapIn" />
+      <wsdl:output message="tns:ConsultarTarjetaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceBancoSoap" type="tns:WebServiceBancoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultarTarjeta">
+      <soap:operation soapAction="https://bancoweb.azurewebsites.net/ConsultarTarjeta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceBancoSoap12" type="tns:WebServiceBancoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultarTarjeta">
+      <soap12:operation soapAction="https://bancoweb.azurewebsites.net/ConsultarTarjeta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceBanco">
+    <wsdl:port name="WebServiceBancoSoap" binding="tns:WebServiceBancoSoap">
+      <soap:address location="http://bancoweb.azurewebsites.net/WebServiceBanco.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceBancoSoap12" binding="tns:WebServiceBancoSoap12">
+      <soap12:address location="http://bancoweb.azurewebsites.net/WebServiceBanco.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

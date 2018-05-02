@@ -19,7 +19,21 @@ namespace SW_CIDEAUTOS
 
         protected void btEnviar_Click(object sender, EventArgs e)
         {
+            ServicioTarjeta.WebServiceBancoSoapClient cliente = new ServicioTarjeta.WebServiceBancoSoapClient();
+            var respuesta = cliente.ConsultarTarjeta();
+            if (respuesta)
+            {
+                mostrarMensaje("Transaccion realizada con exito!");
+            }
+            else
+            {
+                mostrarMensaje("No se pudo realizar la transaccion!");
+            }
+        }
 
+        public void mostrarMensaje(String msj)
+        {
+            Page.ClientScript.RegisterStartupScript(Page.GetType(), "Message Box", "<script language='javascript'>alert('" + msj + "')</script>");
         }
     }
 }

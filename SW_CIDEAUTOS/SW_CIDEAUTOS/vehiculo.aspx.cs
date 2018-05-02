@@ -284,7 +284,7 @@ namespace SW_CIDEAUTOS
 
         protected void btn_comprar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Pago.aspx?codigo="+actual.getCodigo());
+            Response.Redirect("Pago.aspx");
         }
     }
 }
