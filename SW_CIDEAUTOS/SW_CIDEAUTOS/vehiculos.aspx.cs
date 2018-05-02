@@ -14,9 +14,15 @@ namespace SW_CIDEAUTOS
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             Conexion con = new Conexion();
-            List<Carro> carros = con.verCarros();
-            empresa = con.getEmpresa();
+            List<Carro> carros = Sesion.getInstance().getVehiculos();
+            if (carros == null)
+            {
+                carros = con.verCarros();
+                Sesion.getInstance().setVehiculos(carros);
+            }
+            //empresa = con.getEmpresa();
 
             ////ENCABEZADO DEL HTML OSEA EL HEADER Y EL NAVEGADOR DE PAGINAS
             //String encabezadoHTML = "<div class=\"header\">"+

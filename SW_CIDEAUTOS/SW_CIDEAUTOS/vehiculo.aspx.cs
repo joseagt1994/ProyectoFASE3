@@ -11,7 +11,7 @@ namespace SW_CIDEAUTOS
     public partial class vehiculo : System.Web.UI.Page
     {
         public String codigoHTML;
-        public Empresa empresa;
+        //public Empresa empresa;
         public Imagen imagen;
         public Carro actual;
 
@@ -19,8 +19,10 @@ namespace SW_CIDEAUTOS
         {
             int cod = Convert.ToInt32(Request.QueryString["codigo"]);
             Conexion con = new Conexion();
-            empresa = con.getEmpresa();
-            actual = con.getCarro(cod);
+            //empresa = con.getEmpresa();
+            actual = Sesion.getInstance().getVehiculo(cod);
+            if(actual == null)
+                actual = con.getCarro(cod);
 
             //PRIMER DIV EL CUAL LLEVA LO SIGUIENTE: GALERIA DE IMAGENES DEL CARRO SELECCIONADO Y LA INFORMACION
             String galeriaImagenes = "<p>" +

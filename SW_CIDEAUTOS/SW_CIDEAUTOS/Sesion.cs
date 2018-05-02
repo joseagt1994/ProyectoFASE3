@@ -13,6 +13,9 @@ namespace SW_CIDEAUTOS
         public bool iniciado = false;
         private static Sesion sesion = null;
 
+        private List<Carro> vehiculos = null;
+
+
         private Sesion()
         {
 
@@ -32,6 +35,28 @@ namespace SW_CIDEAUTOS
             this.nombre = nombre;
             this.pass = pass;
             this.iniciado = true;
+        }
+
+        public List<Carro> getVehiculos()
+        {
+            return vehiculos;
+        }
+
+        public void setVehiculos(List<Carro> vehiculos)
+        {
+            this.vehiculos = vehiculos;
+        }
+
+        public Carro getVehiculo(int codigo)
+        {
+            foreach(Carro v in vehiculos)
+            {
+                if(v.getCodigo() == codigo)
+                {
+                    return v;
+                }
+            }
+            return null;
         }
     }
 }
