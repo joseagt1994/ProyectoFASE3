@@ -22,7 +22,7 @@ namespace SW_CIDEAUTOS
                 carros = con.verCarros();
                 Sesion.getInstance().setVehiculos(carros);
             }
-            //empresa = con.getEmpresa();
+            empresa = con.getEmpresa();
 
             ////ENCABEZADO DEL HTML OSEA EL HEADER Y EL NAVEGADOR DE PAGINAS
             //String encabezadoHTML = "<div class=\"header\">"+
