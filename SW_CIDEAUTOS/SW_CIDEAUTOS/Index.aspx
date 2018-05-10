@@ -60,7 +60,7 @@
 		<div class="slider-wrapper theme-mi-slider">
 			<div id="slider" class="nivoSlider">     
                 <% for (int i = 0; i < banners.Count; i++) { %>
-                    <img src="imagenes/banner/<%= banners.ElementAt(i).ruta %>" alt="" title="#htmlcaption<%= i+1 %>" />
+                    <img src="imagenes/banner/<%= banners[i].ruta %>" alt="" title="#htmlcaption<%= i+1 %>" />
                 <% } %>
 			</div> 
 		</div>
@@ -280,7 +280,7 @@
 					    <h3 >Buscanos en</h3>
 					    <ul class="nav navbar-nav">
                             <% for (int i = 0; i < enlaces.Count; i++) { %>
-                                <li><a href="<%= enlaces.ElementAt(i).codigo %>"><img align="center" src="imagenes/empresa/<%= enlaces.ElementAt(i).ruta %>"></a></li>
+                                <li><a href="<%= enlaces[i].codigo %>"><img align="center" src="imagenes/empresa/<%= enlaces[i].ruta %>"></a></li>
                             <% } %>
 					    </ul>
 				    </td>
