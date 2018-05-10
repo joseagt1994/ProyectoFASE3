@@ -280,7 +280,7 @@
 					    <h3 >Buscanos en</h3>
 					    <ul class="nav navbar-nav">
                             <% for (int i = 0; i < enlaces.Count; i++) { %>
-                                <li><a href="<%= enlaces.ElementAt(i).nombre %>"><img align="center" src="imagenes/empresa/<%= enlaces.ElementAt(i).ruta %>"></a></li>
+                                <li><a href="<%= enlaces.ElementAt(i).codigo %>"><img align="center" src="imagenes/empresa/<%= enlaces.ElementAt(i).ruta %>"></a></li>
                             <% } %>
 					    </ul>
 				    </td>
